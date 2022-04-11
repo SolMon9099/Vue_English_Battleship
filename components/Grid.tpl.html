@@ -1,0 +1,16 @@
+<table class="grid" :class="mode + '-mode'">
+    <thead>
+        <tr>
+            <th colspan="10">{{ name }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr v-for="row in grid">
+            <td v-for="cell_name in row" @click="handle_cell_click(cell_name)"
+                :class="[shots[cell_name], {ship: check_ship_presence(cell_name)}]">
+                <div class="word">{{ word_for_cell(cell_name) }}</div>
+                <div class="cell_name">{{ cell_name }}</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
