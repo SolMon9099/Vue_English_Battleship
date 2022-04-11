@@ -1,0 +1,59 @@
+.grid {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+    .grid tr {
+
+    }
+
+        .grid tr th {
+            color: gray;
+            border: 1px solid black;
+            font-size: 2em;
+        }
+
+        .grid tr td {
+            width: 5em;
+            height: 5em;        
+            border: 1px solid gray;
+            position: relative;
+        }
+
+            .grid tr td .cell_name {
+                position: absolute;
+                left: .5em;
+                top: .5em;
+                color: gray;
+            }
+
+            .grid tr td .word {
+                font-weight: bold;
+            }
+
+        .grid tr td.ship {
+            border-color: black;
+            border-width: 5px;
+        }
+
+    .grid.game-mode td {
+        cursor: crosshair;
+    }
+        .grid.game-mode td.miss {
+            background: green;
+        }
+
+        .grid.game-mode td.aimed {
+            background: yellow;
+        }
+
+        .grid.game-mode td.damaged {
+            background: orange;
+        }
+
+        .grid.game-mode td.destroyed {
+            background: red;
+        }
+
+    .grid.ship-placement-mode td {
+        cursor: pointer;
+    }

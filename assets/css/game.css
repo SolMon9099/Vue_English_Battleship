@@ -1,0 +1,24 @@
+#game {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+    #game h1 {
+        border-bottom: 1px solid black;
+        line-height: 2em;
+    }
+
+    #game .controls {
+        margin-top: 2em;        
+    }
+
+.enemy-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-grid {
+    display: flex;
+    justify-content: space-around;
+}
